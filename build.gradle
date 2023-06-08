@@ -1,0 +1,48 @@
+plugins {
+    id 'java'
+    id 'maven'
+    id 'maven-publish'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+compileJava {
+    options.encoding = "UTF-8"
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.2'
+    testImplementation 'junit:junit:4.13.2'
+    testRuntimeOnly 'org.junit.vintage:junit-vintage-engine:5.8.2'
+    testCompile 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+    compile 'org.seleniumhq.selenium:selenium-java:3.141.59'
+    compile 'io.cucumber:cucumber-java:7.12.0'
+    compile 'io.cucumber:cucumber-junit-platform-engine:7.12.0'
+    testCompile 'io.cucumber:cucumber-junit:7.12.0'
+    compile 'io.appium:java-client:7.5.1'
+    implementation 'io.github.cdimascio:java-dotenv:5.2.2'
+
+    /* Using cucumber-java8 */
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'io.cucumber:cucumber-java8:7.12.0'
+    testImplementation 'io.cucumber:cucumber-junit:7.12.0'
+}
+
+test {
+    systemProperty "cucumber.filter.tags", System.getProperty("cucumber.filter.tags")
+    testLogging.showStandardStreams = true
+}
+
+tasks {
+    clean {
+        delete "${rootDir}/build"
+        delete "${rootDir}/target"
+    }
+}
