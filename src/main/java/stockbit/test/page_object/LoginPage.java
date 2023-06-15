@@ -10,11 +10,11 @@ public class LoginPage extends BasePageObject {
     }
 
     public void inputUsername(String username) {
-        inputText("FIELD_USERNAME", username);
+        inputText("FIELD_USERNAME", usernameasdasadgdsgsdgsdgdgs);
     }
 
     public void inputPassword(String password) {
-        inputText("FIELD_PASSWORD", password);
+        inputText("FIELD_PASSWORD", passworddgdsggdgsdgs);
     }
 
     public void clickButtonLogin() {
