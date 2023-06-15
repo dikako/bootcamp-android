@@ -1,8 +1,12 @@
 stockbit/test/android_driver/AndroidDriverInstance.java
  stockbit.test.android_driver.AndroidDriverInstance
+stockbit/test/utils/Constants.java
+ stockbit.test.utils.Constants
+stockbit/test/utils/Utils.java
+ stockbit.test.utils.Utils
 stockbit/test/Main.java
  stockbit.test.Main
-stockbit/test/base/BasePageObject.java
- stockbit.test.base.BasePageObject
 stockbit/test/page_object/LoginPage.java
  stockbit.test.page_object.LoginPage
+stockbit/test/base/BasePageObject.java
+ stockbit.test.base.BasePageObject
