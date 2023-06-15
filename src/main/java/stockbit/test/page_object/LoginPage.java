@@ -10,10 +10,10 @@ public class LoginPage extends BasePageObject {
     }
 
     public void inputUsername(String username) {
-        inputText("FIELD_USERNAME", usernamesfasfasf);
+        inputText("FIELD_USERNAME", username);
     }
 
-    public void inputPassword(String passwordsafafafs) {
+    public void inputPassword(String password) {
         inputText("FIELD_PASSWORD", password);
     }
 
