@@ -1,7 +1,10 @@
 package stockbit.test;
 
-public class Main {
+import stockbit.test.base.BasePageObject;
+
+public class Main extends BasePageObject {
+
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+//        element("NAVBAR_CHANGE_TRADING_PROFILE");
     }
 }
